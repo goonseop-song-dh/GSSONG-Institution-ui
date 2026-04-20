@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>기관 목록 — /institutions</title>
+<link rel="stylesheet" href="mockup-style.css">
+</head>
+<body>
+<section class="screen">
+  <div class="screen-label"><span>기관 목록 (랜딩)</span><span><span class="path">/institutions</span> · <span class="role">USER / ADMIN</span></span></div>
+  <div class="navbar">
+    <div class="logo">연구기관 관리</div>
+    <nav><a href="institutions-list.html" class="active">기관 목록</a><a href="types-list.html">기관 유형</a></nav>
+    <div class="user">admin <span class="badge admin">ADMIN</span> <button class="btn ghost">로그아웃</button></div>
+  </div>
+  <div class="content">
+    <h2>기관 목록 <a href="institution-new.html" class="btn primary">+ 기관 등록</a></h2>
+    <table>
+      <thead><tr><th>기관명</th><th>코드</th><th>유형</th><th>대표자</th><th>설립일</th></tr></thead>
+      <tbody>
+        <tr class="clickable" onclick="location.href='institution-detail.html'"><td>한국과학기술원</td><td>KAIST</td><td>대학</td><td>홍길동</td><td>1971-02-16</td></tr>
+        <tr class="clickable"><td>한국전자통신연구원</td><td>ETRI</td><td>정부출연연구소</td><td>김철수</td><td>1976-12-30</td></tr>
+        <tr class="clickable"><td>서울대학교</td><td>SNU</td><td>대학</td><td>이영희</td><td>1946-08-22</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</body>
+</html>

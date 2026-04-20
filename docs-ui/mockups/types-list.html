@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>기관 유형 목록 — /institution-types</title>
+<link rel="stylesheet" href="mockup-style.css">
+</head>
+<body>
+<section class="screen">
+  <div class="screen-label"><span>기관 유형 목록</span><span><span class="path">/institution-types</span> · <span class="role">USER / ADMIN</span></span></div>
+  <div class="navbar">
+    <div class="logo">연구기관 관리</div>
+    <nav><a href="institutions-list.html">기관 목록</a><a href="types-list.html" class="active">기관 유형</a></nav>
+    <div class="user">admin <span class="badge admin">ADMIN</span> <button class="btn ghost">로그아웃</button></div>
+  </div>
+  <div class="content">
+    <div class="banner ok">등록되었습니다</div>
+    <h2>기관 유형 <a href="type-new.html" class="btn primary">+ 유형 등록</a></h2>
+    <table>
+      <thead><tr><th>코드</th><th>명칭</th><th>설명</th><th>정렬</th><th>활성</th></tr></thead>
+      <tbody>
+        <tr class="clickable" onclick="location.href='type-detail.html'"><td>UNIVERSITY</td><td>대학</td><td>4년제 대학·대학원 포함</td><td>1</td><td><span class="pill on">활성</span></td></tr>
+        <tr class="clickable"><td>GOVT_RESEARCH</td><td>정부출연연구소</td><td>정부 출연 연구기관</td><td>2</td><td><span class="pill on">활성</span></td></tr>
+        <tr class="clickable"><td>PRIVATE_LAB</td><td>민간 연구소</td><td>-</td><td>3</td><td><span class="pill off">비활성</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</body>
+</html>

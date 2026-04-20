@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>기관 삭제 확인 모달</title>
+<link rel="stylesheet" href="mockup-style.css">
+</head>
+<body>
+<section class="screen">
+  <div class="screen-label"><span>기관 삭제 확인 모달</span><span><span class="role">ADMIN</span></span></div>
+  <div class="navbar">
+    <div class="logo">연구기관 관리</div>
+    <nav><a href="institutions-list.html" class="active">기관 목록</a><a href="types-list.html">기관 유형</a></nav>
+    <div class="user">admin <span class="badge admin">ADMIN</span> <button class="btn ghost">로그아웃</button></div>
+  </div>
+  <div class="content" style="position:relative;">
+    <h2>
+      <span><a href="institutions-list.html" style="font-size:13px;color:var(--muted);text-decoration:none;">← 목록으로</a></span>
+      <span><button class="btn">수정</button> <button class="btn danger">삭제</button></span>
+    </h2>
+    <h3 style="margin:0 0 16px;">한국과학기술원 <span style="color:var(--muted);font-weight:400;">(KAIST)</span></h3>
+    <div class="detail-row"><span class="lbl">유형</span><span>대학</span></div>
+    <div class="detail-row"><span class="lbl">주소</span><span>대전광역시 유성구 대학로 291</span></div>
+    <div class="detail-row"><span class="lbl">대표자</span><span>홍길동</span></div>
+  </div>
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">기관 삭제 확인 <span style="cursor:pointer;">✕</span></div>
+      <div class="modal-body">
+        <p>삭제를 진행하려면 아래 값을 정확히 입력해 주세요.</p>
+        <div class="form-row"><label>기관 코드</label><input type="text" placeholder="KAIST"></div>
+        <div class="form-row"><label>기관명</label><input type="text" placeholder="한국과학기술원"></div>
+        <p style="color:var(--danger);font-size:12px;margin-top:12px;">삭제된 기관은 복구할 수 없습니다.</p>
+      </div>
+      <div class="modal-footer"><button class="btn">취소</button><button class="btn danger">삭제</button></div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

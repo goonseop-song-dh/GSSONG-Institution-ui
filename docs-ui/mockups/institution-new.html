@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>기관 등록 — /institutions/new</title>
+<link rel="stylesheet" href="mockup-style.css">
+</head>
+<body>
+<section class="screen">
+  <div class="screen-label"><span>기관 등록</span><span><span class="path">/institutions/new</span> · <span class="role">ADMIN</span></span></div>
+  <div class="navbar">
+    <div class="logo">연구기관 관리</div>
+    <nav><a href="institutions-list.html" class="active">기관 목록</a><a href="types-list.html">기관 유형</a></nav>
+    <div class="user">admin <span class="badge admin">ADMIN</span> <button class="btn ghost">로그아웃</button></div>
+  </div>
+  <div class="content">
+    <h2>기관 등록</h2>
+    <div class="form-row"><label>기관명 <span class="req">*</span></label><input type="text" placeholder="최대 200자"></div>
+    <div class="form-row"><label>코드 <span class="req">*</span></label><div><input type="text" placeholder="A-Z, 0-9, _, -"><div class="helper">^[A-Z0-9_-]+$</div></div></div>
+    <div class="form-row"><label>유형 <span class="req">*</span></label><select><option>대학</option><option>정부출연연구소</option></select></div>
+    <div class="form-row"><label>주소 <span class="req">*</span></label><input type="text"></div>
+    <div class="form-row"><label>전화</label><input type="text"></div>
+    <div class="form-row"><label>이메일</label><input type="email"></div>
+    <div class="form-row"><label>홈페이지</label><input type="url"></div>
+    <div class="form-row"><label>대표자</label><input type="text"></div>
+    <div class="form-row"><label>설립일</label><input type="date"></div>
+    <div class="btn-row"><a href="institutions-list.html" class="btn">취소</a><button class="btn primary">등록</button></div>
+  </div>
+</section>
+</body>
+</html>
